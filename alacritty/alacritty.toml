@@ -1,0 +1,60 @@
+#░█▀▄░█░█░█░░░█▀▀░▀░█▀▀░░░█▀█░█░░░█▀█░█▀▀░█▀▄░▀█▀░▀█▀░▀█▀░█░█
+#░█░█░█░█░█░░░█▀▀░░░▀▀█░░░█▀█░█░░░█▀█░█░░░█▀▄░░█░░░█░░░█░░░█░
+#░▀▀░░▀▀▀░▀▀▀░▀▀▀░░░▀▀▀░░░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░▀░▀▀▀░░▀░░░▀░░░▀░
+#░█▀▀░█▀█░█▀█░█▀▀░▀█▀░█▀▀
+#░█░░░█░█░█░█░█▀▀░░█░░█░█
+#░▀▀▀░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀
+
+[general]
+live_config_reload = true
+
+[window]
+dimensions = {columns = 135, lines = 35}
+padding = {x = 20, y = 20}
+decorations = "None"
+opacity = 0.75
+blur = true
+startup_mode = "Windowed"
+title = "Terminal"
+dynamic_title = true
+decorations_theme_variant = "None"
+
+[scrolling]
+multiplier = 3
+
+[font]
+normal = {family = "JetBrains mono", style = "Regular"}
+
+[colors]
+vi_mode_cursor = {text = "CellBackground", cursor = "#FFAC1C"}
+line_indicator = { foreground = "#FFAC1C", background = "#010101" }
+footer_bar = {foreground = "#010101", background = "#FFFFFF"}
+[colors.primary]
+background = "#000000"
+[colors.normal]
+black = "#181818"
+red = "#FF2700"
+green = "#9CDA31"
+yellow = "#FFFF00"
+blue = "#2196F3"
+magenta = "#C000BD"
+cyan = "#26C6DA"
+white = "#FFFFFF"
+
+[selection]
+save_to_clipboard = false
+
+[terminal]
+# shell = "<string>" | { program = "<string>", args = ["<string>",] }
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  {key = "=", mods = "Control", action = "IncreaseFontSize"},
+  {key = "-", mods = "Control", action = "DecreaseFontSize"},
+  {key = "=", mods = "Control | Alt", action = "ResetFontSize"},
+  {key = "ArrowDown", mods = "Super", action = "Minimize"},
+]
+
